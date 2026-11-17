@@ -1,0 +1,78 @@
+{
+  "name": "@local/dsh-yijing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "I Ching coin oracle for DeepSeek Harness: animated cast card, Zhu Xi's change rule, classical Zhouyi text only.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "yijing": "./bin/yijing.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "bin",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "README.zh-CN.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.1.5-rc.1 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "iching",
+    "zhouyi",
+    "divination",
+    "classical-chinese",
+    "plugin",
+    "agent-tools"
+  ],
+  "homepage": "https://github.com/Kochere/dsh-yijing#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kochere/dsh-yijing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kochere/dsh-yijing/issues"
+  },
+  "author": "Kochere",
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "fetch:sources": "node scripts/fetch-sources.mjs",
+    "build:data": "node scripts/build-data.mjs",
+    "preview:ui": "node scripts/preview-ui.mjs",
+    "preview:github": "node scripts/preview-github.mjs",
+    "assets": "node scripts/make-assets.mjs"
+  }
+}

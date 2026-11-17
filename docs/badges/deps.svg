@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="110" height="20" role="img" aria-label="dependencies: 0">
+  <linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#fff" stop-opacity=".7"/><stop offset="1" stop-opacity=".1"/></linearGradient>
+  <clipPath id="r"><rect width="110" height="20" rx="3" fill="#fff"/></clipPath>
+  <g clip-path="url(#r)">
+    <rect width="89" height="20" fill="#555"/>
+    <rect x="89" width="21" height="20" fill="#2F7D4F"/>
+    <rect width="110" height="20" fill="url(#s)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,Geneva,sans-serif" font-size="11">
+    <text x="44.5" y="14">dependencies</text>
+    <text x="99.5" y="14">0</text>
+  </g>
+</svg>

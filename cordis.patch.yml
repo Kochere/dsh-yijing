@@ -1,0 +1,4 @@
+# dsh-yijing bundle patch — Host-only Zhouyi oracle.
+- insert:
+    - id: yijing
+      name: '@local/dsh-yijing'

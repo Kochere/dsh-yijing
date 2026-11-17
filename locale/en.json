@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "I Ching coin oracle",
+    "description": "Casts six coin lines for the user’s question, derives the primary and changed hexagrams and moving lines, and returns only the classical Zhouyi text selected by Zhu Xi’s change-divination rule. Interpretation is left to the agent.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+.out/
+scripts/vendor/
+*.log
+.DS_Store
+
+# local-only visual review artifacts
+preview/
